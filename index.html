@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Lib Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: purple;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="/cs212/lab/7" method="post">
+        <label for="noun">Noun:</label>
+        <input type="text" id="noun" name="noun" required>
+
+        <label for="adjective">Adjective:</label>
+        <input type="text" id="adjective" name="adjective" required>
+
+        <label for="verb">Verb:</label>
+        <input type="text" id="verb" name="verb" required>
+
+        <label for="pluralNoun">Plural Noun:</label>
+        <input type="text" id="pluralNoun" name="pluralNoun" required>
+
+        <label for="color">Color:</label>
+        <input type="text" id="color" name="color" required>
+
+        <label for="adverb">Adverb:</label>
+        <input type="text" id="adverb" name="adverb" required>
+
+        <label for="bodyPart">Body Part:</label>
+        <input type="text" id="bodyPart" name="bodyPart" required>
+
+        <label for="emotion">Emotion:</label>
+        <input type="text" id="emotion" name="emotion" required>
+
+        <label for="animal">Animal:</label>
+        <input type="text" id="animal" name="animal" required>
+
+        <label for="food">Food:</label>
+        <input type="text" id="food" name="food" required>
+
+        <button type="submit">Generate Mad Lib</button>
+    </form>
+</body>
+</html>
